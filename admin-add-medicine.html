@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Medicine - Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="glass-card">
+            <h2>Add New Medicine</h2>
+            <form id="addMedicineForm">
+                <input type="text" id="medName" placeholder="Medicine Name" required>
+                <input type="text" id="medManufacturer" placeholder="Manufacturer" required>
+                <input type="text" id="medBatch" placeholder="Batch Number" required>
+                <input type="date" id="medExpiry" required>
+                <input type="text" id="medQRCode" placeholder="QR Code Value" required>
+                <select id="medStatus">
+                    <option value="genuine">Genuine</option>
+                    <option value="expired">Expired</option>
+                    <option value="suspected">Suspected Fake</option>
+                </select>
+                <textarea id="medDescription" placeholder="Description" rows="3"></textarea>
+                <button type="submit" class="btn-primary">Add Medicine</button>
+            </form>
+            <button onclick="location.href='admin-dashboard.html'" class="back-btn">Back to Dashboard</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

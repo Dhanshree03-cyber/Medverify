@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - MedVerify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="header glass-card">
+            <div class="logo-small">🛡️ MedVerify</div>
+            <div class="user-info">
+                <span id="userName">User</span>
+                <span class="notification-bell">🔔</span>
+            </div>
+        </div>
+
+        <div class="hero-section">
+            <h1>Verify Medicines Instantly</h1>
+            <button class="scan-btn-large" onclick="location.href='scan.html'">
+                📷 Scan QR Code
+            </button>
+        </div>
+
+        <div class="stats-card glass-card">
+            <h3>Your Activity</h3>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number" id="scanCount">0</div>
+                    <div class="stat-label">Total Scans</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Accuracy Rate</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="quick-actions">
+            <h3>Quick Actions</h3>
+            <div class="action-grid">
+                <div class="action-card" onclick="location.href='scan.html'">
+                    <div class="action-icon cyan">📷</div>
+                    <p>Scan Medicine</p>
+                </div>
+                <div class="action-card" onclick="location.href='report.html'">
+                    <div class="action-icon red">⚠️</div>
+                    <p>Report Fake</p>
+                </div>
+                <div class="action-card" onclick="location.href='history.html'">
+                    <div class="action-icon blue">📜</div>
+                    <p>History</p>
+                </div>
+                <div class="action-card" onclick="location.href='about.html'">
+                    <div class="action-icon purple">ℹ️</div>
+                    <p>About</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation -->
+        <div class="bottom-nav">
+            <div class="nav-item" onclick="location.href='dashboard.html'">🏠<span>Home</span></div>
+            <div class="nav-item" onclick="location.href='history.html'">📜<span>History</span></div>
+            <div class="nav-item centered" onclick="location.href='scan.html'">📷<span>Scan</span></div>
+            <div class="nav-item" onclick="location.href='about.html'">ℹ️<span>About</span></div>
+            <div class="nav-item" onclick="location.href='profile.html'">👤<span>Profile</span></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

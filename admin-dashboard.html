@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - MedVerify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="header glass-card">
+            <div class="logo-small">🛡️ MedVerify Admin</div>
+            <div class="user-info">
+                <span>Admin</span>
+                <button onclick="logout()" style="background: none; border: none; color: #EF4444; cursor: pointer;">Logout</button>
+            </div>
+        </div>
+        <div class="stats-card glass-card">
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number" id="totalMedicines">0</div>
+                    <div class="stat-label">Medicines</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="totalReports">0</div>
+                    <div class="stat-label">Reports</div>
+                </div>
+            </div>
+        </div>
+        <div class="quick-actions">
+            <button class="btn-primary" onclick="location.href='admin-add-medicine.html'">➕ Add New Medicine</button>
+        </div>
+        <div class="glass-card" style="margin-top: 20px;">
+            <h3>Medicine Database</h3>
+            <div id="medicineList"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

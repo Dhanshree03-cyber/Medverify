@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Fake Medicine - MedVerify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="glass-card">
+            <h2>⚠️ Report Suspicious Medicine</h2>
+            <form id="reportForm">
+                <input type="text" id="reportMedicineName" placeholder="Medicine Name *" required>
+                <input type="text" id="reportBatchNumber" placeholder="Batch Number *" required>
+                <textarea id="reportDescription" placeholder="Reason for suspicion *" rows="4" required></textarea>
+                <button type="submit" class="btn-primary">Submit Report</button>
+            </form>
+            <button onclick="location.href='dashboard.html'" class="back-btn" style="margin-top: 10px;">← Back</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

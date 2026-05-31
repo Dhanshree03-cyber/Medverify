@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan Medicine - MedVerify</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- QR Scanner Library — no install needed -->
+    <script src="https://unpkg.com/html5-qrcode"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="glass-card">
+            <button class="back-btn" onclick="history.back()">← Back</button>
+            <h2>📷 Scan QR Code</h2>
+
+            <!-- Camera Scanner Box -->
+            <div id="qr-reader" style="width:100%; max-width:400px; margin:0 auto;"></div>
+
+            <!-- Status Message -->
+            <div id="scanStatus" style="
+                text-align:center;
+                margin: 10px 0;
+                color: #aaa;
+                font-size: 14px;
+            ">
+                Point camera at QR code to scan
+            </div>
+
+            <!-- Divider -->
+            <div style="
+                text-align:center;
+                margin: 15px 0;
+                color: #666;
+                font-size: 13px;
+            ">
+                ── OR enter manually ──
+            </div>
+
+            <!-- Manual Input -->
+            <div class="manual-input">
+                <input 
+                    type="text" 
+                    id="manualCode" 
+                    placeholder="Enter QR code (e.g. QR1001)"
+                />
+                <button onclick="verifyMedicine()" class="btn-primary">
+                    Verify
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
